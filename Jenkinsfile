@@ -1,6 +1,8 @@
 #!/usr/bin/env groovy
 pipeline {
-  agent any
+  agent {
+    docker { image 'groovy:4.0.0-alpha-2-jre15' }
+  }
   stages {
     stage('preflight') {
       steps {
