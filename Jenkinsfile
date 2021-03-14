@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-  agent {
-    docker { image 'groovy:4.0.0-alpha-2-jre15' }
-  }
+  agent any
   stages {
     stage('Run a cake') {
       steps {
