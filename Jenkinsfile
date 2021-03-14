@@ -6,7 +6,7 @@ pipeline {
     stage('chckout') {
       steps {
         deleteDir()
-        checkout scm
+        checko  ut scm
       }
     }
     stage('Run a cake') {
