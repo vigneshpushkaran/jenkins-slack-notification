@@ -4,7 +4,7 @@ pipeline {
     docker { image 'groovy:4.0.0-alpha-2-jre15' }
   }
   stages {
-    stage('preflight') {
+    stage('Run a cake') {
       steps {
         echo sh(returnStdout: true, script: 'env')
         sh 'index.sh'
